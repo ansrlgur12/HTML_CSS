@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+       div{
+        margin-bottom: 10px;
+       }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <!--label : form 내에서 상호작용 요소에 이름을 붙일 때 사용-->
+        <!--name : 서버에서 지정된 이름으로 입력 요소를 식별 할 수 있음-->
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male" checked>
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female">
+
+        <!--fieldset 태그로 그룹을 만들면 박스 모양의 테두리가 생김-->
+        <fieldset style="background-color : #eee">
+            <legend>기본 정보</legend>
+            <div class="id">
+                <label for="userid">아이디</label>
+                <input type="text" id ="userid">
+            </div>
+            <div class="pwd">
+                <label for="passwd">비밀번호</label>
+                <input type="text" id="passwd">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <div>
+                <label for="age">나이</label>
+                <input type="number" name="" id="age">
+            </div>
+            <div>
+                <label for="recommender">추천인</label>
+                <input type="text" name="" id="recommender">
+            </div>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <div>
+                <label for="title">제목</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="desc"></label>
+                <textarea name="" id="desc" cols="80" rows="10" readonly></textarea>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
