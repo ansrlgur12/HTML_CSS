@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button 태그 : 새롭게 추가된 요소이며, 기존의 input에서 type속성으로 구현하는 버튼을 대체 할 수 있음 -->
+    <!-- disable : 비활성화 -->
+    <!-- maxlength : 입력할 수 있는 최대 글자 수 제한-->
+    <!-- placeholer : 입력 요소에 어떤값이 입력 되어야 하는지 힌트를 알려줌-->
+    <form action="#">
+        <input type="submit" value="등록">
+        <button type="submit">
+            <img src="./images/facebook.png" alt="facebook button">
+            등록하기
+        </button>
+    </form>
+    <label for="name">이름</label>
+    <input type="text" id="name" readonly>
+    <br>
+    <label for="tel">전화번호</label>
+    <input type="tel" id="tel" readonly>
+
+    <br><br>
+    <button disabled>확인</button>
+    <button>취소</button>
+
+    <input type="text" maxlength="8">
+
+    <form action="#">
+        <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" value="banana">
+            <label for="banana">banana</label><br>
+            <input type="checkbox" id="apple" value="apple">
+            <label for="apple">apple</label><br>
+            <input type="checkbox" id="orange" value="orange">
+            <label for="orange">orange</label><br>
+        </fieldset>
+    </form>
+
+    <input type="tel" placeholder="하이폰은 제외">
+    <input type="text" placeholder="이름입력">
+    <br><br>
+    
+    <!-- required : 필수입력 요소를 의미함 -->
+    <form action="#">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" required>
+            <br>
+            <button type="submit">제출</button>
+    </fieldset>
+    </form>
+
+</body>
+</html>

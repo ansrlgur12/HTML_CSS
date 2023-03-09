@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입 페이지</title>
+</head>
+<body>
+    <form action="#">
+        <h2>회원 가입 페이지</h2>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone"><br><br>
+		<input type="submit" value="Submit">
+    </form>
+    <script>
+        function validateForm(){
+            let password = document.getElementById("password").value;
+            let confirm_password = document.getElementById("confirm_password").value;
+            if (password != confirm_password) {
+                alert("패스워드를 잘 못 입력 하였습니다.");
+                return false;
+            }
+        }
+        document.querySelector("form").addEventListener("submit", function(event){
+            validateForm();
+        });
+    </script>
+</body>
+</html>

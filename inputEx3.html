@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--라디오타입 : 여러 항목 중 하나의 값을 선택 할 때 사용-->
+    <form action="#">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male" checked>
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female" value="여자">
+
+    </form>
+    <!-- select 태그를 사용하여 콤보 박스 만들기-->
+    <!-- option : 서버에 전송할 값을 value 속성으로 지정 할 수 있으며, 생략하면 option 태그의 값이 전달됨-->
+    <!-- optgroup : 항목을 그룹으로 묶을 때 사용-->
+    <!-- selected : 기본 선택 항목을 변경 -->
+    <!-- size : 화면에 노출되는 항목의 개수를 지정-->
+    <!-- multiple : select 태그는 기본적으로 1개의 항목을 선택 할 수 있습니다. 여러개의 선택이 필요한 경우에 multiple 사용-->
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보 입력</legend> 
+            <label for="city">지역</label>
+            <select name="city" id="city" size="5" multiple>
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구" selected>강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="영등포구">영등포구</option>
+                    <option value="강서구">강서구</option>
+                </optgroup>
+                <optgroup label="경기도 수원시">
+                    <option value="권선구">권선구</option>
+                    <option value="영통구">영통구</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="등록">
+        </fieldset>
+    </form>
+</body>
+</html>

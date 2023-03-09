@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            width : 70px;
+            display: inline-block;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        span{
+            font-size: 70%;
+        }
+        .btn{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
 </head>
 <body>
+    <h1 style="color :#1975c1">연습문제 (1)</h1><br>
     <h1>예약 정보</h1>
     <form>
         <div>
@@ -27,12 +49,12 @@
 
 
 <br><br><br><br><hr>
-
+<h1 style="color :#1975c1">연습문제 (2)</h1><br>
 <form>
     <fieldset>
-<h1>프런트엔드 개발자 지원서</h1>
-<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
-<hr>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
 <h3>개인정보</h3>
 
 <blockquote>
@@ -41,7 +63,7 @@
         <input type="text" id="name" placeholder="공백없이 입력하세요">
     </div>
     <div>
-        <label for="[phone]">연락처</label>
+        <label for="phone">연락처</label>
         <input type="number" name="" id="phone">
     </div>
 </blockquote>
@@ -50,22 +72,127 @@
 
     <div>
         <blockquote>
-        <input type="radio" name="" id="webp">
-        <label for="webp">웹 퍼블리싱</label><br>
-        <input type="radio" name="" id="weba">
-        <label for="weba">웹 애플리케이션 개발</label><br>
-        <input type="radio" name="" id="dev">
-        <label for="dev">개발 환경 개선</label>
-    </blockquote>
+        <input type="radio" name="a" id="webp">
+        <div2 for="webp">웹 퍼블리싱</div2><br>
+        <input type="radio" name="a" id="weba">
+        <div2 for="weba">웹 애플리케이션 개발</div2><br>
+        <input type="radio" name="a" id="dev">
+        <div2 for="dev">개발 환경 개선</div2>
+        </blockquote>
     </div>
 
     <h3>지원동기</h3>
-    <label for="write"></label>
+    <label2 for="write"></label2>
     <textarea name="" id="write" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
-    <br>
+    <br><br>
     <button type="submit">접수하기</button>
     <button type="submit">다시 쓰기</button>
 </fieldset>
 </form>
+<br><br>
+<hr>
+<h1 style="color : #1975c1">연습문제 (3)</h1><br>
+<h1>아이패드 주문하기</h1>
+<form action="#">
+<fieldset>
+    <legend>배송 정보</legend>
+    <div>
+    <label for="item">주문 상품</label> 
+    <input style="width: 300px;" type="text" id="item" value="아이패드 12.9인치" readonly ><br>
+    <label for="name">이름</label>
+    <input style="width: 300px;"type="text" id="name"><br>
+    <label for="add">배송 주소</label>
+    <input style="width: 300px;"type="text" id="add" required><br>
+    <label for="email">이메일</label>
+    <input style="width: 300px;"type="text" id="email"><br>
+    <label for="phone">연락처</label>
+    <input style="width: 300px;"type="tel" id="phone"placeholder="하이픈 빼고 입력해 주세요.(01012345678)"><br>
+    <label for="date">배송 지정</label>
+    <input style="width: 150px;"type="date" id="date">
+    <span>(주문일로부터 최소 3일 이후)</span>
+    </div>
+</fieldset>
+<br>
+<div class="btn">
+<button style="width: 150px; height: 40px; margin-left: 6px; margin-right: 6px;" type="submit">주문하기</button>
+<button style="width: 150px; height: 40px; margin-left: 6px; margin-right: 6px;">취소하기</button>
+</div>
+</form>
+<br><br><hr>
+<h1 style="color :#1975c1">연습문제 (4)</h1><br>
+<hr>
+<fieldset>
+    <legend>기본 정보</legend>
+    <label for="id">아이디</label>
+    <input type="text" id = "id"> <br>
+    <label for="pwd">패스워드</label>
+    <input type="text" id="pwd">
+</fieldset>
+<fieldset>
+    <legend>세부 정보</legend>
+    <label for="email">이메일</label>
+    <input type="text" id="email" placeholder="@를 넣어야 됩니다."><br>
+    <label for="tel">전화번호</label>
+    <input type="tel" id="tel" placeholder="하이픈을 넣지 마세요"><br>
+    <label for="age">나이</label>
+    <input type="age" id="age">
+</fieldset>
+<fieldset>
+    <legend>주소 입력</legend>
+    <label for="city">도시</label>
+    <select name="city" id="city">
+        <optgroup label="서울시">
+            <option value="강북구">강북구</option>
+            <option value="강남구" selected>강남구</option>
+            <option value="서초구">서초구</option>
+            <option value="영등포구">영등포구</option>
+            <option value="강서구">강서구</option>
+        </optgroup>
+        <optgroup label="경기도 수원시">
+            <option value="권선구">권선구</option>
+            <option value="영통구">영통구</option>
+        </optgroup>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>성별</legend>
+    <label2 for="male">남성</label2>
+    <input type="radio" name="gender" id="male">
+    <label2 for="female">여성</label2>
+    <input type="radio" name="gender" id="female">
+</fieldset>
+<fieldset>
+    <legend>직업</legend>
+    <label2 for="student">학생</label2>
+    <input type="radio" name="job" id="male">
+    <label2 for="company">회사원</label2>
+    <input type="radio" name="job" id="company">
+    <label2 for="house">주부</label2>
+    <input type="radio" name="job" id="house">
+    <label2 for="no">무직</label2>
+    <input type="radio" name="job" id="no">
+</fieldset>
+<fieldset>
+    <legend>취미를 선택하세요</legend>
+    <label2 for="gym">운동</label2>
+    <input type="radio" name="hobby" id="gym">
+    <label2 for="music">음악</label2>
+    <input type="radio" name="hobby" id="music">
+    <label2 for="drawing">그림</label2>
+    <input type="radio" name="hobby" id="drawing">
+</fieldset>
+<br>
+<label for="date">가입일</label>
+<input type="date" id="date"><br><br>
+
+<label for="write">소개글</label><br><br>
+<textarea name="" id="write" cols="60" rows="10" ></textarea>
+<br><br>
+<button type="submit">
+    <img src="./images/bear.png"  height = "25px"alt="bear">
+    제출</button>
+<button type="submit">
+    <img src="./images/bear.png"  height = "25px"alt="bear">
+    초기화</button>
 </body>
 </html>
