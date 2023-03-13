@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 자식 선택자 : 부모요소의 하위에 있는 자식 요소에 스타일을 적용
+        주의할점 : 클래스 바로 아래에 있는 자식들만 적용
+        > 를 제거하면 클래스 밑에있는 모든 요소로 바뀜    */
+        .box > p {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>1번 항목 입니다.</p>
+        <div>
+            <p>2번 항목 입니다.</p>
+        </div>
+        <p>3번 항목 입니다.</p>
+    </div>
+    
+</body>
+</html>

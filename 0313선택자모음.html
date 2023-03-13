@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상품 소개 페이지</title>
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    /* 태그 선택자 . : 태그명으로 선택자를 지정하는 방법 */
+    p{
+        font-style:italic;
+    }
+
+    /* 클래스 선택자 */
+    .accent{
+        border: 1px solid #000;
+        padding: 5px;
+    }
+
+    .bg{
+        background-color: #ddd;
+    }
+
+    /* 아이디 선택자 # : 클래스 선택자가 문서에서 여러번 적용 할 수 있는 반면, id 선택자는
+                        문서에서 한 번만 적용할 수 있음 */
+    #container {
+        width: 500px;
+        margin: 10px auto;
+        padding: 10px;
+        border: 1px solid #000;
+    }
+
+    /* 기본 속성 선택자 : 속성과 값을 사용해 선택자를 지정하는 방법 */
+    a[href] {
+        color: red;
+    } 
+    
+    a[target = "_blank"] {
+        color: green;
+    }
+
+    #google[href] {
+        color: blue;
+        font-style: oblique; /* 기울임체 */
+    }
+
+    /* 그룹 선택자 : 여러 선택자를 하나로 그룹 지을때 사용 */
+    p {
+        color: red;
+    }
+
+    #title {
+        color: red;
+    }
+
+    .red {
+        color: red;
+    }
+
+    p, #title, .red{
+        color: aqua;
+    }
+    
+  </style>
+</head>
+<body>
+    <div id="container">
+        <h1>레드향</h1>
+        <p>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+        <p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다.</p>
+    </div>
+    <a href="http://naver.com">네이버</a>
+    <a href="http://kakao.com" target="_blank">카카오</a>
+    <a id="google" href="http://google.com">구글</a>
+</body>
+</html>

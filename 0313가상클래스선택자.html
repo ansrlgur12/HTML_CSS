@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 클래스 선택자</title>
+    <style>
+        /* 가상 클래스 선택자 : 요소의 상태를 이용해 선택자를 지정하는 방법 */
+        /* 링크 가상 선택자 : a태그에서 발생할 수 있는 링크 상태를 이용해 선택하는 방법 */
+        
+        /* link : 한번도 방문하지 않은 링크 일 때 선택 */
+        a:link {
+            color: orange;
+        }
+
+        /* visited  : 한 번이라고 방문한 적이 있는 링크*/
+        a:visited{
+            color: green;
+        }
+
+        /* 동적 가상 선택자 : 마우스를 올리거나 누르는 동작 등에 대한 선택자 */
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: aqua;
+            transition-property: background-color, color, width;
+            transition-duration: 1s;
+            transition-delay: 1s;
+        }
+        button:hover {
+            background-color: royalblue;
+        }
+        button:active {
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="https://kakao.com">카카오</a>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.co.kr">구글</a>
+    <a href="https://daum.net">다음</a>
+    <a href="https://github.com/">깃허브</a>
+    <br>
+    <button>active</button>
+</body>
+</html>
