@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>위치 속성으로 HTML 요소 배치하기</title>
+    <style>
+        body{
+            margin: 0;
+            height: 4000px;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red-box {
+            background-color: red;
+        }
+        .green-box {
+            background-color: green;
+            position: sticky;
+            top: 0px;
+            
+        }
+        .blue-box{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red-box{
+            background-color: red;
+            position: relative;
+            z-index: 1;
+        }
+        .green-box{
+            background-color: green;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+</body>
+</html>

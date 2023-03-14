@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        .parent{
+            width: 320px;
+            height: 240px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        .child{
+            height: 2000px;
+            background-image :url('./images/coffee.jpg');
+            background-attachment: scroll;
+            /* 요소에 삽입된 이미지를 스크롤 할 때 이미지의 작동 방식을 결졍 */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
