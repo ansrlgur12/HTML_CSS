@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+
+        li{
+            position: relative;
+            margin: 10px;
+            padding: 0;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0px auto;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        img{
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            float: left;
+        }
+        li .caption{
+            left: -200px;
+            color: white;
+            position: absolute;
+            text-align: center;
+            padding-top: 20px;
+            width: 300px;
+            height: 180px;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all;
+           transition-duration: .8s;
+           transition-delay: .3s;
+            opacity: 0;
+        }
+        li:hover .caption{
+           opacity: 1;
+           transform: translateX(200px);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>신상품 목록</h1>
+        <ul>
+            <li><img src="./images/prod1.jpg" alt="">
+                <div class="caption">
+                    <h2>상품 1</h2>
+                    <p>상품 1에 대한 설명텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+            <li><img src="./images/prod2.jpg" alt="">
+                <div class="caption">
+                    <h2>상품 2</h2>
+                    <p>상품 2에 대한 설명텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+            <li><img src="./images/prod3.jpg" alt="">
+                <div class="caption">
+                    <h2>상품 3</h2>
+                    <p>상품 3에 대한 설명텍스트</p>
+                    <p>가격 : 12,345원</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
