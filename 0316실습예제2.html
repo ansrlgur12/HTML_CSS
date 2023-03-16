@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        body{
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .memo{
+            position: relative;
+            background-color: #ff9;
+            padding: 18px;
+            width: 250px;
+            height: 250px;
+            margin: 50px 50px;
+            transform: rotate(10deg);
+            text-align: center;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .main > p{
+            font-size: 17px;
+            font-weight:500;
+        }
+        .header > p{
+            font-size: 35px;
+            margin-bottom: 18px;
+            
+        }
+        
+        .square{
+            position: absolute;
+            left: 227px;
+            top: 282px;
+            width: 50px;
+            height: 50px;
+            background-color: hsl(46, 100%, 76%);
+            transform: skew(-30deg);
+            z-index: 2;
+        }
+        .white-square{
+            position: absolute;
+            left: 200px;
+            top: 294px;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            z-index: 3;
+            transform: rotate(65deg);
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="memo">
+            <div class="header">
+                <p>To. 남편</p>
+            </div>
+            <div class="main">
+                <p>여보~ 오늘 급하게 먼저 출근해야 해서<br>인사도 못 하고 먼저 나가요~</p>
+                <br>
+                <p>아침 굶지 말고 냉장고에 있는 반찬</p>
+                <p>전자레인지에 데워서 챙겨 먹고 나가요~!</p><br>
+                <p>그럼 오늘 하루도 힘내고 이따 저녁에 봐요~</p>
+                <p>화이팅~!</p> 
+            </div>
+        </div>
+        <div class="square"></div>
+        <div class="white-square"></div>
+    </div>
+</body>
+</html>
