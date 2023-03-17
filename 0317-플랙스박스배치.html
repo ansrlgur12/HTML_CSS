@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        .container .item{
+            width: 160px;
+            height: 240px;
+            margin: 5px;
+        }
+        .item:nth-child(1){ background-image: url(./images/1.jpg);}
+        .item:nth-child(2){ background-image: url(./images/2.jpg);}
+        .item:nth-child(3){ background-image: url(./images/3.jpg);}
+        .item:nth-child(4){ background-image: url(./images/4.jpg);}
+        .item:nth-child(5){ background-image: url(./images/5.jpg);}
+        .item:nth-child(6){ background-image: url(./images/6.jpg);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
