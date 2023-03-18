@@ -257,6 +257,7 @@ main .sec2 .day1:hover .title{
 img{
     width: 130px;
     height: 140px;
+    border: 2px solid #313131;
 }
 /* main .sec2 .webtoon:nth-child(3){ background-image: url(./images/웹툰1.png);} */
 
