@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드 레이아웃</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .grid-container{
+            margin: 20px;
+            width:700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            row-gap: 2px;
+            column-gap: 2px;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "sidebar content content"
+                "footer footer footer";
+        }
+        .grid-item{
+            color: white;
+            background-color: orangered;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #header{
+            grid-area: header;
+            background-color: royalblue;
+        }
+        #sidebar{
+            grid-area: sidebar;
+            background-color: orange;
+        }
+        #content{
+            grid-area: content;
+        }
+        #footer{
+            grid-area: footer;
+            background-color: cadetblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class = "grid-item">header</div>
+        <div id="sidebar"class = "grid-item">sidebar</div>
+        <div id="content"class = "grid-item">content</div>
+        <div id="footer" class = "grid-item">footer</div>
+    </div>    
+</body>
+</html>
