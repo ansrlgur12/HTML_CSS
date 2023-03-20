@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,300px);
+            row-gap: 2px;
+            column-gap: 2px;
+            background-color: #ccc;
+            padding: 2px;
+        }
+        .cup{
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-flow: column nowrap;
+        }
+        .cup h3 {
+            margin-top: 5px;
+        }
+        .cup .image{
+            margin-top: 15px;
+            width: 70%;
+            height: 50%;
+            margin-left: 10px;
+            margin-right: 30px;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .cup:nth-child(1) .image{ background-image: url(./images/cup-1.jpg); }
+        .cup:nth-child(2) .image{ background-image: url(./images/cup-2.jpg); }
+        .cup:nth-child(3) .image{ background-image: url(./images/cup-3.jpg); }
+        .cup:nth-child(4) .image{ background-image: url(./images/cup-4.jpg); }
+        .cup:nth-child(5) .image{ background-image: url(./images/cup-5.jpg); }
+        .cup:nth-child(6) .image{ background-image: url(./images/cup-6.jpg); }
+        .cup:nth-child(7) .image{ background-image: url(./images/cup-7.jpg); }
+        .cup:nth-child(8) .image{ background-image: url(./images/cup-1.jpg); }
+        .cup .info{
+            font-size: 80%;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+        <div class="cup">
+            <h3>사진제목</h3>
+            <div class="image"></div>
+            <div class="info">사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</div>
+        </div>
+
+    </div>
+</body>
+</html>
