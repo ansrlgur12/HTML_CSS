@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    padding: 0 5%;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -157,7 +157,7 @@ section > article .card{
     margin-top: 30px;
 }
 section > article .card .new-thumbnail{
-    height: 50%;
+    height: 250px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,7 +191,8 @@ section > article .card:nth-child(3) .new-thumbnail{
     background-image: url(./images/신규웹툰\ 3.png);
 }
 .banner{
-    margin-top: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     width: 100%;
     height: 80px;
     background-image: url(./images/배너1.png);
@@ -207,14 +208,16 @@ main{
     justify-content: baseline;
     align-items: left;
     width: 100%;
-    height: 45vh;
+    height: 135vh;
+    margin-bottom: 100px;
 }
 main .day-webtoon{
     width: 100%;
     height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content:baseline
+    justify-content:baseline;
+    margin-bottom: 25px;
 }
 main .day-webtoon .title{
     height: 40px;
@@ -234,12 +237,312 @@ main .day-webtoon .orderby{
     align-items: center;
 }
 main .day-webtoon .orderby .index{
-    width: 75px;
-    margin: 10px;
+    width: 60;
+    margin: 3px;
     text-align: center;
     color:#535353;
     font-weight: bold;
     font-size: 90%;
 }
+main .day-webtoon .orderby .index:hover{
+    color: #2db400;
+}
+main > article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1220px;
+    height: 100vh;
+}
+main > article .webtoon{
+    width: 100%;
+    height: 100%;
+}
 
+main > article .webtoon .webtoon{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+    border: .5px solid #ccc;
+    border-top: none;
+}
 
+main > article .webtoon .thumbnail{
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main > article .webtoon .webtoon-title{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 90%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+main > article .webtoon .top{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 90%;
+    border: .5px solid #ccc;
+    border-bottom: none;
+}
+main > article .webtoon .top:hover{
+    background-color: #2db400;
+    color: white;
+}
+
+main > article .webtoon:hover{
+    background-color: hsl(105, 100%, 90%);
+}
+main > article .webtoon:hover .webtoon .top{
+    background-color: #2db400;
+    color: white;
+}
+main > article .mon .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/월요일1.png);}
+main > article .mon .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/월요일2.png);}
+main > article .mon .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/월요일3.png);}
+main > article .mon .webtoon:nth-child(5) .thumbnail{ background-image: url(./images/월요일4.png);}
+main > article .tue .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/화요일1.png);}
+main > article .tue .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/화요일2.png);}
+main > article .tue .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/화요일3.png);}
+main > article .wed .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/수요일1.png);}
+main > article .wed .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/수요일2.png);}
+main > article .wed .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/수요일3.png);}
+main > article .thu .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/목요일1.png);}
+main > article .thu .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/목요일2.png);}
+main > article .thu .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/목요일3.png);}
+main > article .thu .webtoon:nth-child(5) .thumbnail{ background-image: url(./images/목요일4.png);}
+main > article .fri .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/금요일1.png);}
+main > article .fri .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/금요일2.png);}
+main > article .fri .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/금요일3.png);}
+main > article .sat .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/토요일1.png);}
+main > article .sat .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/토요일2.png);}
+main > article .sat .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/토요일3.png);}
+main > article .sun .webtoon:nth-child(2) .thumbnail{ background-image: url(./images/일요일1.png);}
+main > article .sun .webtoon:nth-child(3) .thumbnail{ background-image: url(./images/일요일2.png);}
+main > article .sun .webtoon:nth-child(4) .thumbnail{ background-image: url(./images/일요일3.png);}
+
+footer{
+    margin-top: 50px;
+    width: 1220px;
+    height: 100vh;
+    position: static;
+    display: flex;   
+    flex-direction: column;
+}
+
+footer .foot-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-basis: 40%;
+}
+
+footer .foot-top .link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 70%;
+}
+footer .foot-top .link .web-go{
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    line-height: 3;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.btn{
+    height: 40px;
+    width: 80px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 0%, 94%);
+    color: #535353;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: hwb(0 78% 22%);
+}
+
+footer .foot-top .notice{
+    flex-basis: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer .foot-top .notice .title{
+    height: 40px;
+    width: 150px;
+    line-height: 3;
+    font-weight: bold;
+    font-size: larger;
+}
+footer .foot-top .notice .more{
+    height: 40px;
+    line-height: 3;
+    font-weight: bold;
+    font-size: 90%;
+    color: #535353;
+}
+footer .foot-top .notice .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+ul{
+    margin-top: 10px;
+    list-style: disc;
+    margin-left: 20px;
+}
+li{
+    font-size: 80%;
+    margin-bottom: 5px;
+}
+
+footer .foot-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-basis: 30%;
+}
+
+footer .foot-middle .box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 30px 5px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 253, 254);
+    border: 1px solid #535353;
+    border-radius: 10px;
+}
+
+footer .foot-middle .box .desc{
+    padding-top: 50px;
+    padding-left: 20px;
+    height: 100%;
+    flex-basis: 70%;
+    line-height: 1.5;
+    font-size: 130%;
+    font-weight: bold;
+}
+footer .foot-middle .box .desc .desc-bottom{
+    color: #2db400;
+}
+footer .foot-middle .box .image{
+    flex-basis: 40%;
+    height: 90%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+footer .foot-middle .box:nth-child(1) .image{background-image: url(./images/버튼1.png);}
+footer .foot-middle .box:nth-child(2) .image{background-image: url(./images/버튼2.png);}
+footer .foot-middle .box:nth-child(3) .image{background-image: url(./images/버튼3.png);}
+
+footer .foot-bottom{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 40%;
+}
+footer .foot-bottom .bottom-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+footer .foot-bottom .bottom-top .top-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-weight: bold;
+}
+
+footer .foot-bottom .bottom-top .top-left .index{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+}
+.ba{
+    font-weight: lighter;
+    color: #535353;
+    margin: 0 10px;
+}
+
+footer .foot-bottom .bottom-top .top-left .index .small{
+    font-size: 80%;
+    margin-left: 5px;
+    line-height: 1.5;
+    color: #535353;
+}
+
+footer .foot-bottom .bottom-top .top-right{
+    font-weight: bolder;
+}
+
+footer .foot-bottom .bottom-mid{
+    margin-top: 15px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .foot-bottom .bottom-mid .mid-left{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-basis: 50%;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: 1px solid #ccc;
+}
+footer .foot-bottom .bottom-mid .mid-right{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-basis: 50%;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mid-desc{
+    font-size: 80%;
+    margin-left: 5px;
+    line-height: 1.5;
+    color: #535353;
+    margin: 0 5px;
+}
+footer .foot-bottom .bottom-bot{
+    margin-top: 20px;
+}
+
+main .day-webtoon .orderby .ba{
+    margin: 0px 15px
+}
